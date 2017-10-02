@@ -15,5 +15,10 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd"> 
 
     <!-- Bean definitions go here -->
-    
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/mymeadtest"/>
+        <property name="username" value="root" />
+        <property name="password" value="" />
+    </bean>
 </beans>
